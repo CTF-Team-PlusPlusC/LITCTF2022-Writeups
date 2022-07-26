@@ -11,11 +11,15 @@ We used `webshell.picoctf.org` for most of the debugging, and then switched to a
 
 First, we downloaded the zip file in the drive link, and opened it. Viewing the `save_tyger2.c` file, we see a couple of important details:
 
+![save_tyger2 contents](view_st_2.png)
+
 The `cell` function opens the flag and prints it out; we clearly want to call it. 
 Moreover, in `main` we see a `gets`, which tells us that we want to invoke a buffer overflow.
 
 Specifically, we want to overflow the `buf` array, and inject the address of `cell` after that. To get the location of `cell`, we chose to decompile the 
 executable in assembly, using `objdump -M intel -d save_tyger2 > dis.asm`. Scrolling to `cell`, we see that the address is `0x0000000000401162`.
+
+![dissassembly](disasm.png)
 
 All that's left to do is inject this address in a buffer overflow:
 
