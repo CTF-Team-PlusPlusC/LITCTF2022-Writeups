@@ -23,7 +23,7 @@ Navigating to that url, we see a screen with an exe and an image. The image was 
 We downloaded the executable. When we searched for strings in the executable, we found a string called "flag.mp3". This matched up with our observation above, and we started searching for ways to get the mp3 out of the executable. When we ran the executable, the top left icon displayed a snake:
 ![image](https://user-images.githubusercontent.com/58674441/180918327-af84363b-d910-4224-8440-264baa961478.png)
 
-This snake was clearly the pygame logo, indicating that the executable was compiled with pyinstaller with the --onefile flag. So, we used [pyinstxtractor](https://raw.githubusercontent.com/extremecoders-re/pyinstxtractor/master/pyinstxtractor.py) do extract the contents of the executable. Once extracted, we `cd`ed into the trash-royal.exe_extracted folder:
+This snake was clearly the pygame logo, indicating that the executable was compiled with pyinstaller with the --onefile flag. So, we used [pyinstxtractor](https://raw.githubusercontent.com/extremecoders-re/pyinstxtractor/master/pyinstxtractor.py) to extract the contents of the executable. Once extracted, we `cd`ed into the trash-royal.exe_extracted folder:
 <img width="1550" alt="image" src="https://user-images.githubusercontent.com/58674441/180917284-e39aced1-57e7-48e9-9090-3c6fa0003655.png">
 
 Music files are typically stored in `/assets` so we checked the folder, and found `flag.mp3`
