@@ -8,4 +8,4 @@ This GeoGuessr was definately the hardest. An immediate observation revealed an 
 ![image](https://user-images.githubusercontent.com/64376702/180920182-79362d15-1373-42e6-93cc-f700d7e33036.png)
 ![image](https://user-images.githubusercontent.com/64376702/180920192-5a02469f-1da1-4a9e-afde-91d7a892d777.png)
 
-The only country with major Google Streetview coverage that covered the above criteria was Senegal, and from there we found the town hall of Tambacounda purely from trial and error, leading to the answer of `LITCTF{13.775,-13.669}`
+The only country with major Google Streetview coverage that covered the above criteria was Senegal (but we still checked other places), and from there we found the town hall of Tambacounda purely from trial and error (there were around 14ish Hotel De Ville's in Africa), leading to the answer of `LITCTF{13.775,-13.669}`
