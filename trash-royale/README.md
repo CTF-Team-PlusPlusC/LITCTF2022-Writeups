@@ -3,7 +3,7 @@
 ## Problem Statement:
 Find the flag, and make sure its wrapped in LITCTF{}
 
-Ugh, I keep forgetting my password for https://spectacle-deprive4-launder.herokuapp.com/, so I will just (sic, we think they meant put but we're not sure) it here.
+Ugh, I keep forgetting my password for https://spectacle-deprive4-launder.herokuapp.com/, so I will just (sic) it here.
 Username: LexMACS and Password: !codetigerORZ
 
 ## Solution
