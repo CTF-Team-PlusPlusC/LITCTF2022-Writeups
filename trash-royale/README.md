@@ -20,7 +20,7 @@ Viewing the page source, one finds a hidden link:
 <img width="1430" alt="image" src="https://user-images.githubusercontent.com/58674441/180916265-74501250-e074-48ef-a6c7-dff413265c3f.png">
 
 Navigating to that url, we see a screen with an exe and an image. The image was useless (according to basic steganography). We also saw a warning that the sounds were buggy, pointing us towards finding sound files, mp3 and wav files.
-We downloaded the executable. A couple of things were immediately apparent. Firstly, the executable took a long time to download. Secondly, when run, the top left icon displayed a snake:
+We downloaded the executable. When we searched for strings in the executable, we found a string called "flag.mp3". This matched up with our observation above, and we started searching for ways to get the mp3 out of the executable. When we ran the executable, the top left icon displayed a snake:
 ![image](https://user-images.githubusercontent.com/58674441/180918327-af84363b-d910-4224-8440-264baa961478.png)
 
 This snake was clearly the pygame logo, indicating that the executable was compiled with pyinstaller with the --onefile flag. So, we used [pyinstxtractor](https://raw.githubusercontent.com/extremecoders-re/pyinstxtractor/master/pyinstxtractor.py) do extract the contents of the executable. Once extracted, we `cd`ed into the trash-royal.exe_extracted folder:
